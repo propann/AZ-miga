@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "notes": "Manifest de collecte, sans versions ou sommes de contrôle inventées ; compléter après téléchargement et vérification.",
+  "source": "https://www.aros.org/cgi-bin/files?lang=en&type=nightly2",
+  "targets": [
+    {
+      "id": "amiga-m68k-boot-floppy",
+      "type": "archive-with-boot-floppy",
+      "required_for": "first-test"
+    },
+    {
+      "id": "amiga-m68k-boot-iso",
+      "type": "archive-with-iso",
+      "required_for": "system-setup"
+    },
+    {
+      "id": "amiga-m68k-contrib",
+      "type": "optional-contributions"
+    },
+    {
+      "id": "aros-rom.bin",
+      "type": "m68k-main-rom",
+      "note": "locate in AROS build"
+    },
+    {
+      "id": "aros-ext.bin",
+      "type": "m68k-extended-rom",
+      "note": "required in some boot configurations"
+    },
+    {
+      "id": "amiga-m68k-classic",
+      "type": "optional-lightweight-build"
+    }
+  ]
+}
