@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=AZ-miga
+Comment=Amiga emulator setup
+Exec=/usr/local/bin/az-miga-launch
+Terminal=false
