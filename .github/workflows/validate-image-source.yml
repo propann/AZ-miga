@@ -1,0 +1,20 @@
+name: Validate AZ-miga image sources
+on:
+  push:
+    paths:
+      - 'image/**'
+      - 'scripts/**'
+      - 'data/kickstart-manifest.json'
+      - 'docs/WORKBENCH-FIRST.md'
+      - '.github/workflows/validate-image-source.yml'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify scripts and required files
+        run: bash scripts/verify-image-layout.sh
