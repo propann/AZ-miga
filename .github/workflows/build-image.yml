@@ -1,0 +1,24 @@
+name: Build experimental AZ-miga image
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  image:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Free runner disk space
+        run: |
+          sudo rm -rf /usr/local/lib/android /opt/hostedtoolcache /usr/share/dotnet
+          df -h
+      - name: Build image using pi-gen
+        run: bash scripts/build-image.sh
+      - name: Upload experimental image
+        uses: actions/upload-artifact@v4
+        with:
+          name: AZ-miga-pi4-experimental
+          path: .build/pi-gen/deploy/*.zip
+          if-no-files-found: error
+          retention-days: 7
