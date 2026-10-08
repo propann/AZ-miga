@@ -1,0 +1,7 @@
+AZ-MIGA BOOT TARGET: WORKBENCH FIRST
+This experimental image launches Amiberry settings only.
+To launch directly into Workbench, first legally install AmigaOS on persistent storage,
+save a validated Amiberry A1200 configuration, and configure that file as autostart.
+Use WHDLoad icons to run compatible installed games inside Workbench.
+Games needing A500 Kickstart/OCS timing must boot a separate compatible profile.
+No commercial Kickstart, Workbench or games are included.
