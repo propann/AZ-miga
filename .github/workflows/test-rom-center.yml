@@ -1,0 +1,23 @@
+name: Test AZ-miga ROM Center
+on:
+  push:
+    paths:
+      - 'tools/**'
+      - 'tests/**'
+      - '.github/workflows/test-rom-center.yml'
+  pull_request:
+    paths:
+      - 'tools/**'
+      - 'tests/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python scanner tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Syntax check
+        run: python3 -m py_compile tools/azrom.py
