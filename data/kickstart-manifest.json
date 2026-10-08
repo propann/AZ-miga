@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "source": "https://github.com/BlitterStudio/amiberry/wiki/Kickstart-ROMs-%28BIOS%29",
+  "entries": [
+    {
+      "filename": "kick34005.A500",
+      "model": "A500",
+      "version": "1.3 r34.5",
+      "crc32": "c4f0f55f",
+      "whdload_required": true
+    },
+    {
+      "filename": "kick37350.A600",
+      "model": "A600",
+      "version": "2.05 r37.350",
+      "crc32": "43b0df7b",
+      "whdload_required": true
+    },
+    {
+      "filename": "kick40068.A1200",
+      "model": "A1200",
+      "version": "3.1 r40.68",
+      "crc32": "1483a091",
+      "whdload_required": true
+    },
+    {
+      "filename": "kick33180.A500",
+      "model": "A500",
+      "version": "1.2 r33.180",
+      "crc32": "a6ce1636",
+      "whdload_required": false
+    },
+    {
+      "filename": "kick40068.A4000",
+      "model": "A4000",
+      "version": "3.1 r40.68",
+      "crc32": "d6bae334",
+      "whdload_required": false
+    },
+    {
+      "filename": "kick40060.CD32",
+      "model": "CD32",
+      "version": "3.1 r40.60",
+      "crc32": "1e62d4a5",
+      "whdload_required": false
+    },
+    {
+      "filename": "ext40060.CD32",
+      "model": "CD32",
+      "version": "extended r40.60",
+      "crc32": "87746be2",
+      "whdload_required": false
+    }
+  ]
+}
